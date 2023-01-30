@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>กลศาสตร์</title>
+<center>
+    <script>
+        function Mun(){
+            let num1 = document.getElementById("num3").value;
+            let num2 = document.getElementById("num4").value;
+            let result = parseFloat(num1) - parseFloat(num2);
+            document.getElementById("result1").value = result;
+        }
+    </script>
+<body>
+    <font size = "7">โมเมนต์ของแรง</font><br>
+<img src= "1b.jpg" width="600px"height="250"/>
+</body>
+
+
+<script language="javascript">
+       
+  function a(){    
+      
+       var int1 = document.getElementById("input1").value;
+       var int2 = document.getElementById("input2").value;      
+       var n1 = parseFloat(int1);
+       var n2 = parseFloat(int2);                  
+       if ((isNaN(n1))||(isNaN(n2))){
+           document.getElementById("show").setAttribute("color","red");
+           show.innerHTML="ERROR";
+       }    
+       else {         
+          s=n1+n2;      
+          document.getElementById("show").setAttribute("color","green");
+          show.innerHTML=s;
+       }
+      }
+  function b(){    
+      
+       var int1 = document.getElementById("input1").value;
+       var int2 = document.getElementById("input2").value;      
+       var n1 = parseFloat(int1);
+       var n2 = parseFloat(int2);                  
+       if ((isNaN(n1))||(isNaN(n2))){
+           document.getElementById("show").setAttribute("color","red");
+           show.innerHTML="ERROR";
+       }    
+       else {         
+          s=n1-n2;      
+          document.getElementById("show").setAttribute("color","green");
+          show.innerHTML=s;
+       }
+      }  
+  function c(){    
+      
+       var int1 = document.getElementById("input1").value;
+       var int2 = document.getElementById("input2").value;      
+       var n1 = parseFloat(int1);
+       var n2 = parseFloat(int2);                  
+       if ((isNaN(n1))||(isNaN(n2))){
+           document.getElementById("show").setAttribute("color","red");
+           show.innerHTML="ERROR";
+       }    
+       else {         
+          s=n1*n2;      
+          document.getElementById("show").setAttribute("color","green");
+          show.innerHTML=s;
+       }
+     }
+  function d(){    
+      
+       var int1 = document.getElementById("input1").value;
+       var int2 = document.getElementById("input2").value;      
+       var n1 = parseFloat(int1);
+       var n2 = parseFloat(int2);    
+       if ((isNaN(n1))||(isNaN(n2))){
+           document.getElementById("show").setAttribute("color","red");
+           show.innerHTML="ERROR";
+       }    
+       else {         
+          s=n1/n2;      
+          document.getElementById("show").setAttribute("color","green");
+          show.innerHTML=s;
+       }      
+     }   
+</script>
+</head>
+</center>
+ <center>
+<br>คำนวณโมเมนต์ !!!</br>
+<body>
+   
+    <div style="padding:10px; border: 1px solid #ffdada; background-color: #dbddd9;">
+      <br> หา R1 !!!</br>
+        <br>R1  : <input id="input1" name="input1" size="10" placeholder="แรง N *2 " > = <input id="input2" name="input2" size="10" placeholder="แรงรวม"><br />       
+        ผลลัพธ์ : <font id="show" color=""></font> <br />        
+    
+        <button onclick="javascript: a();">+</button>
+        <button onclick="javascript: b();">-</button>
+        <button onclick="javascript: c();">x</button>
+        <button onclick="javascript: d();">/</button>
+      </center>
+</body></div>
+</html>
+<center>
+    <div style="padding:10px; border: 1px solid #ffdada; background-color: #dbddd9;">
+<br> หา R2 !!!</br>
+<br><form> 
+    <tr>R2= </tr>
+    <input type="text" id="num3" placeholder="แรง N ">
+    <!--<select name="p_units" id="p_units">
+        <option value="dyne second">dyn·s</option>
+        <option value="dyne minute">dyn·min</option>
+        <option value="dyne hour">dyn·h</option>
+        <option value="kilogram meter per second" selected="">kg·m/s</option>
+        <option value="newton ">N</option>
+        <option value="newton second">N·s</option>
+        <option value="newton minute">N·min</option>
+        <option value="newton hour">N·h</option>
+        <option value="millinewton second">mN·s</option>
+        <option value="millinewton minute">mN·min</option>
+        <option value="kilonewton second">kN·s</option>
+        <option value="kilonewton minute">kN·min</option>
+        <option value="kilonewton hour">kN·h</option>
+        <option value="meganewton second">MN·s</option>
+        <option value="meganewton minute">MN·min</option>
+        <option value="meganewton hour">MN·h</option>
+        <option value="pound foot per second">lb·ft/s</option>
+        <option value="pound-force second">lbf·s</option>
+    </select>-->
+     -
+    <input type="text" id="num4" placeholder=" R1 "> 
+    <select name="p_units" id="p_units">
+        <option value="dyne second">dyn·s</option>
+        <option value="dyne minute">dyn·min</option>
+        <option value="dyne hour">dyn·h</option>
+        <option value="newton ">N</option>
+        <option value="kilogram meter per second" selected="">kg·m/s</option>
+        <option value="newton second">N·s</option>
+        <option value="newton minute">N·min</option>
+        <option value="newton hour">N·h</option>
+        <option value="millinewton second">mN·s</option>
+        <option value="millinewton minute">mN·min</option>
+        <option value="kilonewton second">kN·s</option>
+        <option value="kilonewton minute">kN·min</option>
+        <option value="kilonewton hour">kN·h</option>
+        <option value="meganewton second">MN·s</option>
+        <option value="meganewton minute">MN·min</option>
+        <option value="meganewton hour">MN·h</option>
+        <option value="pound foot per second">lb·ft/s</option>
+        <option value="pound-force second">lbf·s</option>
+    </select>
+
+        <input type="button" value="คำนวณ" onclick="Mun()">
+     R2 = </tr><input type="text" id="result1" 
+     height: 200px;
+     width: 200px;> N.
+</form></br></div>
+</center>
+<title>Untitled Document</title>
+<script>
+    function Pl(){
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        let result = parseFloat(num1) * parseFloat(num2);
+        document.getElementById("result").value = result;
+    }
+</script>
+<script>
+    function De(){
+        let num7 = document.getElementById("num7").value;
+        let num8 = document.getElementById("num8").value;
+        let result = parseFloat(num7) / parseFloat(num8);
+        document.getElementById("result5").value = result;
+    }
+</script>
+<script>
+    function Be(){
+        let num10 = document.getElementById("num10").value;
+        let num11 = document.getElementById("num11").value;
+        let result = parseFloat(num10) / parseFloat(num11);
+        document.getElementById("result10").value = result;
+    }
+</script>
+<center>
+    <body>
+    <font size = "7">โมเมนต์ของแรง</font><br>
+<img src= "ex2.jpg" width="600px"height="250"/>
+<img src= "exam.jpg" width="600px"height="250"/>
+
+
+</body>
+</head>
+<body>
+    <div style="padding:10px; border: 1px solid #ffdada; background-color: #dbddd9;">
+        <form>
+            <tr> หาค่า M = </tr>
+            <input type="text" id="num1"placeholder=" F"> * 
+            <input type="text" id="num2"placeholder=" I ">
+            <input type="button" value="คำนวณ" onclick="Pl()">
+            <input type="text" id="result">Nm.
+
+        </form>
+        <form>
+            <tr> หาค่า F = </tr>
+            <input type="text" id="num7"placeholder=" M"> * 
+            <input type="text" id="num8"placeholder=" I ">
+            <input type="button" value="คำนวณ" onclick="De()">
+            <input type="text" id="result5"> Nm.
+
+        </form>
+        <form>
+            <tr> หาค่า I = </tr>
+            <input type="text" id="num10"placeholder=" M"> * 
+            <input type="text" id="num11"placeholder=" F ">
+            <input type="button" value="คำนวณ" onclick="Be()">
+            <input type="text" id="result10"> Nm.
+
+        </form>
+</body>
+</div>
+</center>
