@@ -1,0 +1,18 @@
+form {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #1C315E;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .font{
+    font-size: 20px;
+    color: red;
+  }
+  input #result1{ 
+    height: 200px;
+    text-align: center;
+    width: 200px;
+
+  }
+ 
